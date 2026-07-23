@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro">
+        <h1>Crypto Live <span id="tracker">Tracker</span></h1>
+        <p><span class="status-dot"></span>Update every 60 seconds</p>
+    </div>
+    <div class="choice">
+        <input type="checkbox" id="btc-choice"/>
+        <label for="btc-choice">Bitcoin</label>
+        <input type="checkbox" id="eth-choice"/>
+        <label for="eth-choice">Ethereum</label>
+    </div>
+    <div class="crypto">
+        <div class="crypto-card" id="btc">
+            <h3>Bitcoin (BTC)</h3>
+            <div class="price"><h2 id="btc-price">Loading...</h2></div>
+        </div>
+        
+        <div class="crypto-card" id="eth">
+            <h3>Ethereum (ETH)</h3>
+            <div class="price"><h2 id="eth-price">Loading...</h2></div>
+        </div>
+    </div>
+
+    <div>
+        <p id="time-update">Loading...</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
